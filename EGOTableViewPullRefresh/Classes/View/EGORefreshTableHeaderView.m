@@ -135,7 +135,7 @@
 		}
 		
 		if (scrollView.contentInset.top != 0) {
-			scrollView.contentInset = UIEdgeInsetsMake(5.0f, 0.0f, 0.0f, 0.0f);
+			scrollView.contentInset = UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, 0.0f);
 		}
 		
 	}
@@ -170,7 +170,7 @@
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:.3];
     // 10.0f is the content inset on the top of events
-	[scrollView setContentInset:UIEdgeInsetsMake(5.0f, 0.0f, 0.0f, 0.0f)];
+	[scrollView setContentInset:UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, 0.0f)];
 	[UIView commitAnimations];
 	
 	[self setState:EGOOPullRefreshNormal];
