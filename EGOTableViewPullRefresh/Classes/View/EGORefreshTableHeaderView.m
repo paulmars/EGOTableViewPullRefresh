@@ -47,11 +47,11 @@
 		self.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:231.0/255.0 blue:237.0/255.0 alpha:1.0];
 
 		// background image
-		CALayer *imageLayer = [CALayer layer];
-		imageLayer.frame = CGRectMake(0.0f, frame.size.height - 400.0f, self.frame.size.width, 400.0f);
-		imageLayer.contents = (id)[UIImage imageNamed:@"background.png"].CGImage;
-		[[self layer] addSublayer:imageLayer];
-		_backgroundImage=imageLayer;
+//		CALayer *imageLayer = [CALayer layer];
+//		imageLayer.frame = CGRectMake(0.0f, frame.size.height - 400.0f, self.frame.size.width, 400.0f);
+//		imageLayer.contents = (id)[UIImage imageNamed:@"background.png"].CGImage;
+//		[[self layer] addSublayer:imageLayer];
+//		_backgroundImage=imageLayer;
 
 		UILabel *label;
 		
