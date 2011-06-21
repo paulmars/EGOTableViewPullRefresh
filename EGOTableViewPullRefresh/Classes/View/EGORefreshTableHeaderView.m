@@ -29,6 +29,7 @@
 
 #define TEXT_COLOR	 [UIColor colorWithRed:140.0/255.0 green:140.0/255.0 blue:140.0/255.0 alpha:1.0]
 #define FLIP_ANIMATION_DURATION 0.18f
+#define TOP_CONTENT_INSET 0.0f
 
 
 @interface EGORefreshTableHeaderView (Private)
@@ -135,7 +136,7 @@
 		}
 		
 		if (scrollView.contentInset.top != 0) {
-			scrollView.contentInset = UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, 0.0f);
+			scrollView.contentInset = UIEdgeInsetsMake(TOP_CONTENT_INSET, 0.0f, 0.0f, 0.0f);
 		}
 		
 	}
@@ -170,7 +171,7 @@
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:.3];
     // 10.0f is the content inset on the top of events
-	[scrollView setContentInset:UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, 0.0f)];
+	[scrollView setContentInset:UIEdgeInsetsMake(TOP_CONTENT_INSET, 0.0f, 0.0f, 0.0f)];
 	[UIView commitAnimations];
 	
 	[self setState:EGOOPullRefreshNormal];
